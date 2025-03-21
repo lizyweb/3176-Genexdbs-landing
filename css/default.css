@@ -1,0 +1,560 @@
+:root {
+    --brand: #01b5fb;
+    --sub: #6ac754;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+@media only screen and (min-width: 967px) {
+    .design-1{
+      text-align: center;
+    }
+    .rl-space{
+      padding: 0px 120px;
+    }
+    .rl-space-fluid{
+      padding: 0px 220px;
+    }
+  }
+  
+  .info1{
+    background-color: var(--brand);
+    padding: 50px 20px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .info .info2{
+    height: 500px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .info .info2{
+      height: 200px;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    .info .info1{
+      padding: 50px 20px;
+    }
+    .info .info1 h1{
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+    .info .info1 h4{
+      font-size: 14px;
+    }
+  }
+  
+  .design-h2{
+    font-weight: 900;
+    color: var(--brand);
+  }
+  @media (max-width: 792px) {
+    .design-h2{
+      font-size: 20px;
+    }
+  }
+  .list-num{
+    list-style: decimal;
+    padding: 5px 0px;
+  }
+  
+/*** Facts ***/
+.fact-item .fact-icon {
+    width: 100px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 120px;
+    transition: .5s;
+}
+
+.fact-item:hover .fact-icon {
+    background: var(--dark);
+}
+
+.fact-item .fact-icon i {
+    color: var(--brand);
+    transition: .5;
+}
+
+.fact-item:hover .fact-icon i {
+    color: #FFFFFF;
+}
+
+.sub-img{
+    height: 100px;
+    width: 100%;
+}
+/*END*/
+ 
+/***************************/
+/*     06. Description     */
+/***************************/
+
+.cards-1 {
+	padding-top: 3.25rem;
+	padding-bottom: 3rem;
+	text-align: center;
+}
+
+.cards-1 .h2-heading {
+	margin-bottom: 3.5rem;
+}
+
+.cards-1 .card {
+	max-width: 21rem;
+	margin-right: auto;
+	margin-bottom: 3.5rem;
+	margin-left: auto;
+	padding: 0;
+	border: none;
+}
+
+.cards-1 .card-image {
+	max-width: 16rem;
+	margin-right: auto;
+	margin-bottom: 2rem;
+	margin-left: auto;
+}
+
+.cards-1 .card-title {
+	margin-bottom: 0.5rem;
+}
+
+.cards-1 .card-body {
+	padding: 0;
+}
+/*END*/
+.btn-square{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 50px;
+}
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+/* 
+---------------------------------------------
+Banner Style
+--------------------------------------------- 
+*/
+
+.main-banner {
+  background-repeat: no-repeat;
+  background-position: center bottom 0px;
+  background-image: url(../img/image-4/solution-banner-back-1.png);
+  background-size: cover;
+  padding: 50px 120px 50px 50px;
+  position: relative;
+  overflow: hidden;
+  background-color:var(--light);
+  height: 580px;
+}
+
+.main-banner:after {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+
+.main-banner .left-content {
+  margin-right: 15px;
+}
+
+.main-banner .left-content h2 {
+  z-index: 2;
+  position: relative;
+  font-weight: 400;
+  line-height: 70px;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.main-banner .left-content p {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 45px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.main-banner .left-content .banner-button {
+  z-index: 2;
+  position: relative;
+  font-family: "Open Sans", Arial, sans-serif;
+
+  text-transform: uppercase;
+
+  font-weight: 400;
+
+  font-size: 16px;
+
+  letter-spacing: 2px;
+
+  display: inline-block;
+
+  padding: 15px 30px;
+
+  border-radius: 2px;
+
+  transition: 0.5s;
+
+  margin: 5px;
+
+  border-radius: 50px;
+
+  border: 2px solid white;
+
+  color: #fff;
+
+  background-color: #EC1C24;
+}
+.main-banner .left-content .banner-button:hover {
+  padding-top: 10px !important;
+  padding-right: 45px !important;
+  padding-bottom: 10px !important;
+  padding-left: 35px !important;
+}
+
+/*
+.main-banner .left-content .first-button {
+  margin-right: 15px;
+}
+
+.main-banner .left-content .white-button {
+  display: inline-block;
+}
+*/
+.main-banner .right-image {
+  text-align: center;
+  position: relative;
+  z-index: 20;
+}
+
+.main-banner .right-image img {
+  max-width: 650px;
+}
+
+.main-banner .left-content .white-button a {
+  background-color: #4b8ef1;
+  color: #fff !important;
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .main-banner {
+    padding: 20px 30px;
+    height: auto;
+  }
+
+  .main-banner .left-content {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .main-banner .left-content h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .main-banner .left-content p {
+    margin-bottom: 25px;
+    text-align: justify;
+  }
+
+  .main-banner .right-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .main-banner .right-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-banner .left-content .white-button {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .main-banner .left-content .first-button {
+    margin-right: 0;
+  }
+}
+
+/* 
+
+ /*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+}
+
+.services .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.services .icon-box .icon i {
+  color: var(--sub);
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.services .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: var(--sub);
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.services .icon-box:hover h4 a {
+  color: var(--sub);
+}
+/* start feature */
+#feature
+    {
+        background: #f8f8f8;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+#feature p
+    {
+        padding-top: 10px;
+    }
+#feature span
+    {
+        float: left;
+    }
+#feature .fa
+    {
+        background: var(--sub);
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .responsive-img{
+      height: 500px;
+      width: 100%;
+    }
+/* end feature */
+
+/*End*/
+ .audit-img{
+  height: 180px;
+  width: 100%;
+ }
+
+ /*End*/
+ .vendor{
+  padding-top: 8em;
+    padding-bottom: 4em;
+    background-color: #040d4f !important;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../img/image-4/footer-back-a@2x.png);
+    clip-path: url(#clip-shape);
+    
+}
+  
+ 
+
+ .vend{
+ 
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+      font-weight: 300;
+    font-size: 22.4px;
+    letter-spacing: 2px;
+    line-height: 1.6em;
+   
+ }
+ .vend-img{
+    border-radius: 14px 14px 14px 14px;
+    height: auto;
+    width: 100%;
+    border-style: solid;
+    display: block;
+    max-width: 100%;
+    border-width: 0;
+    position: relative;
+ }
+ .vendo{
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 200;
+  line-height: 1em;
+ }
+
+ 
+/*--------------------------------------------------------------
+
+# Cta
+
+--------------------------------------------------------------*/
+
+.cta {
+
+  /* background: linear-gradient(to right,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/SHA-Hydraulic-Scissor-Lift.png") fixed center center; */
+  background-color: #f5f7fa !important;
+  background-image: url(../img/image-4/cta-pipe-a@2x.png);
+  background-size: cover;
+  background-position: center top;
+  padding: 120px 0;
+  background-repeat: no-repeat;
+  height: 150px;
+  
+
+}
+
+
+
+.cta h3 {
+
+  color:#2F3136;
+
+  font-size: 40px;
+
+  font-weight: 563;
+
+}
+
+
+
+.cta p {
+
+  color: #fff;
+
+}
+
+
+
+.cta .cta-btn {
+
+  font-family: "Open Sans", Arial, sans-serif;
+
+  text-transform: uppercase;
+
+  font-weight: 600;
+
+  font-size: 16px;
+
+  letter-spacing: 2px;
+
+  display: inline-block;
+
+  padding: 15px 30px;
+
+  border-radius: 2px;
+
+  transition: 0.5s;
+
+  margin: 10px;
+
+  border-radius: 50px;
+
+  border: 2px solid white;
+
+  background-color: #040d4f;
+
+  color: #fff;
+
+}
+
+
+
+.cta .cta-btn:hover {
+
+  padding-top: 20px !important;
+  padding-right: 35px !important;
+  padding-bottom: 20px !important;
+  padding-left: 35px !important;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+  .cta {
+
+    background-attachment: scroll;
+
+  }
+
+}
+
+
+
+@media (min-width: 769px) {
+
+  .cta .cta-btn-container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+  }
+
+}
+
+.cta-one {
+
+  background: url("../img/img10.jpg") fixed center center;
+
+  background-size: cover;
+
+  padding: 120px 0;
+
+  margin-bottom: 50px;
+
+}
